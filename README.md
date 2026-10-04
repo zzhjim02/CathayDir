@@ -7,6 +7,16 @@ CathayDir 干的就是这一件事：**批量判断一批 PDF 的文字排版方
 > 算法借自 **CathayPDG**（超星 PDG 批量转换工具）的 `pdg_core.detect_orientation_pdf`，
 > 判定内核一行没改，只把抽样改密了。
 
+[![version](https://img.shields.io/badge/version-v0.1.1-brightgreen)](https://github.com/zzhjim02/CathayDir/releases/latest)
+![license](https://img.shields.io/badge/license-GPL--3.0-blue)
+![platform](https://img.shields.io/badge/platform-Windows--x64-lightgrey)
+
+## 📥 下载
+
+**不用装 Python**：到 [Releases 页面](https://github.com/zzhjim02/CathayDir/releases/latest) 下 `CathayDir-v0.1.1-windows-x64.zip`，
+解压后双击 `CathayDir PDF横竖排识别工具.exe` 就能用 —— 包里有 `sha256.txt` 可校验。
+纯本地运行，不联网、不动原文件。
+
 ## 怎么用
 
 ### 窗口版（推荐）
