@@ -11,6 +11,8 @@
 [![platform](https://img.shields.io/badge/platform-Windows%2010%2B-brightgreen)]()
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)]()
 
+**Cathay 系列 · 🔧 专项小工具**（碰上特定问题才用，用得少）
+
 **拿到一批民国书、一批扫描件，不知道哪几本是竖排的？→ 每 10 页抽一页批量判，一目了然。**
 
 结果能存成 CSV 留档，也能一键把文件分成「横排 / 竖排 / 未知」三个文件夹。
@@ -21,36 +23,29 @@
 
 ## 🔗 Cathay 人文社科工具链
 
-这是一整套给人文社科研究者用的**本地**工具：从「找到一本书」，到「把它变成能搜、能读、能引用的 PDF」，再到「在上万本书里一秒检索」——每一步一个小程序，**各自独立，只挑你用得上的那一步就行**。
+这是一整套给人文社科研究者用的**本地**工具：从「找到一本书」，到「把它变成能搜、能读、能引用的 PDF」，再到「在上万本书里一秒检索」——**十来个小工具各自独立，不用全装，卡在哪一步就拿哪个**。
 
-| 步骤 | 工具 | 一句话 | 版本 |
-|:---:|---|---|---|
-| ⓪ | [CathayRepair](https://github.com/zzhjim02/CathayRepair) | PDF 打不开、一翻就崩 → 先把它抢救回来 | v1.0.0 |
-| ① | [CathayPDG](https://github.com/zzhjim02/CathayPDG) | 读秀 / 超星的 PDG 压缩包 → PDF | v0.1.9 |
-| ② | [CathayOCR](https://github.com/zzhjim02/CathayOCR) | 扫描件做 OCR → 能搜索、能复制的 PDF | v1.2.4 |
-| ③ | [CathayRestore](https://github.com/zzhjim02/CathayRestore) | 把 OCR 出来的 TXT 写回 PDF，做成双层 | v1.0.0 |
-| ④ | [CathayExtract](https://github.com/zzhjim02/CathayExtract) | 已经是双层 PDF → 直接把文字抽成 TXT | v1.2.3 |
-| ⑤ | [CathayShelf](https://github.com/zzhjim02/CathayShelf) | 批量建档归位、规范命名、繁简转换 | v0.4.7 |
-| ⑥ | [CathayFinder](https://github.com/zzhjim02/CathayFinder) | 11 个渠道查这本书在哪（找书号 / 找路径） | v1.1.0 |
-| ⑦ | [CathayHub](https://github.com/zzhjim02/CathayHub) | **索引 + 全库检索 + 浏览阅读，四合一的日常入口**（只有源码） | v0.3.20 |
+> ⭐ **主力软件**（日常用得最多，多数人装这五个就够了，按下面的顺序走）
 
-> 🧭 **最常用的一条线**：⑥ 查到书 → ① 转成 PDF → ② 让它能搜 → ⑤ 著录归架 → ⑦ 检索、翻开。
-> 每一步都能单独用，不强制串起来；整套**纯本地、不联网、不动你的原件**。
+| 顺序 | 我现在的情况 | 用这个 | 版本 |
+|:--:|---|---|:--:|
+| ① | 想找一本书，不知道去哪儿下 | [🔍 CathayFinder](https://github.com/zzhjim02/CathayFinder) —— 11 个渠道一起搜 | v1.1.0 |
+| ② | 下下来是压缩包 / 一堆 `.pdg`，打不开 | [🧩 CathayPDG](https://github.com/zzhjim02/CathayPDG) —— 超星读秀压缩包转 PDF | v0.1.9 |
+| ③ | 翻开是一页页影印图片，字选不中、复制不出来 | [🔤 CathayOCR](https://github.com/zzhjim02/CathayOCR) —— 让电脑看图认字 | v1.2.4 |
+| ④ | 书攒了几百本，文件名乱、摆放乱 | [📚 CathayShelf](https://github.com/zzhjim02/CathayShelf) —— 批量建档归位、规范命名 | v0.4.7 |
+| ⑤ | 书太多了，想一秒搜到某句话 | [🏛️ CathayHub](https://github.com/zzhjim02/CathayHub) —— 索引 · 检索 · 阅读 · 摘录 | v0.3.20（只有源码） |
 
-**已成历史（功能已并入后面的工具，代码还能跑）**
+> 🔧 **专项小工具**（碰上特定问题才用，用得少）
 
-| 工具 | 现状 |
-|---|---|
-| [CathayIndex](https://github.com/zzhjim02/CathayIndex) | 已并入 ⑥ CathayFinder 的「本地文件库索引」页签，以及 ⑦ CathayHub Indexer |
-| [CathayViewer](https://github.com/zzhjim02/CathayViewer) | 已并入 ⑦ CathayHub Viewer |
-| [CathayReader](https://github.com/zzhjim02/CathayReader) | 已由 ⑦ CathayHub Viewer 取代 |
-| [CathaySimplify](https://github.com/zzhjim02/CathaySimplify) | 已并入 ⑤ CathayShelf 的「繁简转换 / 编码规范化」 |
+| 我现在的情况 | 用这个 | 版本 |
+|---|:--:|:--:|
+| PDF 打不开、一翻页就崩 | [🩺 CathayRepair](https://github.com/zzhjim02/CathayRepair) —— 先把坏 PDF 救回来 | v1.0.0 |
+| 想把字「印」回 PDF（做成双层） | [📑 CathayRestore](https://github.com/zzhjim02/CathayRestore) —— 图还是原图，底下多一层字 | v1.0.0 |
+| 想把 PDF 里的字**整批导出**成 TXT | [📤 CathayExtract](https://github.com/zzhjim02/CathayExtract) —— 文字层导出文本文件 | v1.2.3 |
+| **一堆 PDF 摆在面前，想知道各自是横排还是竖排** | **🧭 CathayDir（你在这里）** —— 每 10 页抽一页批量判，能存 CSV / 分三个柜 | v0.1.1 |
 
-**🛠️ 备用小工具（不占主线，按需取用）**
-
-| 工具 | 什么时候想到它 |
-|---|---|
-| **CathayDir（你在这里）** | 成批 PDF 摆在那儿，想先知道各自是**横排还是竖排** —— 分流做 OCR、挑引擎参数、建库前摸底。每 10 页抽一页批量判，结果能存 CSV，也能直接分成「横排 / 竖排 / 未知」三个柜；判定算法借自 CathayPDG |
+整套**纯本地、不联网、不动你的原件**；每一步都能单独用，不强制串起来。
+几个已停更的老项目收在文末的「📦 已停更项目」里，新用户不必理会。
 
 ---
 
@@ -214,6 +209,25 @@ CathayDir PDF横竖排识别工具\
 ├── LICENSE                 # GPL-3.0
 └── README.md
 ```
+
+## 📦 已停更项目
+
+<details>
+<summary><b>展开看四个已停更的项目（功能已并入后面的工具）</b></summary>
+
+这些**代码都还在、也还能跑**，只是不再更新 —— 功能已经被上面某个工具收进去。
+**如果你是新用户，直接去用右边那个替代品就行。**
+
+| 停更项目 | 原本干什么 | 现在该用什么 |
+|---|---|---|
+| [CathaySimplify](https://github.com/zzhjim02/CathaySimplify) | 繁简转换 / 编码规范化 | **→ [CathayShelf](https://github.com/zzhjim02/CathayShelf)** |
+| [CathayIndex](https://github.com/zzhjim02/CathayIndex) | 本地文件库索引 | **→ [CathayFinder](https://github.com/zzhjim02/CathayFinder)** 的「本地文件库索引」页签 ｜ **→ [CathayHub](https://github.com/zzhjim02/CathayHub)** Indexer |
+| [CathayViewer](https://github.com/zzhjim02/CathayViewer) | 书库浏览 | **→ [CathayHub](https://github.com/zzhjim02/CathayHub)** Viewer |
+| [CathayReader](https://github.com/zzhjim02/CathayReader) | 阅读 | **→ [CathayHub](https://github.com/zzhjim02/CathayHub)** Viewer |
+
+</details>
+
+---
 
 ## ❓ 常见问题
 
