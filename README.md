@@ -6,7 +6,7 @@
 
 *开箱即用 · 双击即开 · 纯本地 · 不联网 · 绝不改动原件*
 
-[![version](https://img.shields.io/badge/version-v0.1.1-brightgreen)](https://github.com/zzhjim02/CathayDir/releases/latest)
+[![version](https://img.shields.io/github/v/release/zzhjim02/CathayDir?color=brightgreen)](https://github.com/zzhjim02/CathayDir/releases/latest)
 [![license](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 [![platform](https://img.shields.io/badge/platform-Windows%2010%2B-brightgreen)]()
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)]()
